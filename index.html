@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Downloader Pro</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="icon" href="assets/favicon.png">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-brands fa-spotify"></i>
+
+<span>Spotify Downloader Pro</span>
+
+</div>
+
+<button id="themeToggle" title="Toggle Theme">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<h1>Download Spotify Songs</h1>
+
+<p>
+
+Paste any Spotify track URL and instantly get song information and a downloadable MP3 using RapidAPI.
+
+</p>
+
+</section>
+
+<!-- ================= SEARCH CARD ================= -->
+
+<section class="search-section">
+
+<div class="search-card">
+
+<div class="search-box">
+
+<i class="fa-solid fa-link"></i>
+
+<input
+type="text"
+id="songUrl"
+placeholder="Paste Spotify Song URL...">
+
+<button id="downloadBtn">
+
+<i class="fa-solid fa-download"></i>
+
+Download
+
+</button>
+
+</div>
+
+<div class="loader hidden" id="loader">
+
+<div class="spinner"></div>
+
+<p>Fetching song details...</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SONG CARD ================= -->
+
+<section class="song-section">
+
+<div class="song-card hidden" id="songCard">
+
+<div class="cover">
+
+<img
+id="coverImage"
+src=""
+alt="Album Cover">
+
+</div>
+
+<div class="song-content">
+
+<h2 id="songTitle">Song Title</h2>
+
+<p>
+
+<strong>Artist :</strong>
+
+<span id="artistName">--</span>
+
+</p>
+
+<p>
+
+<strong>Album :</strong>
+
+<span id="albumName">--</span>
+
+</p>
+
+<p>
+
+<strong>Duration :</strong>
+
+<span id="duration">--</span>
+
+</p>
+
+<p>
+
+<strong>Release :</strong>
+
+<span id="releaseDate">--</span>
+
+</p>
+
+<div class="action-buttons">
+
+<button id="downloadSong">
+
+<i class="fa-solid fa-circle-down"></i>
+
+Download MP3
+
+</button>
+
+<button id="copyLink">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy Spotify Link
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= HISTORY ================= -->
+
+<section class="history">
+
+<h2>
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+Recent Downloads
+
+</h2>
+
+<ul id="historyList">
+
+<li>No downloads yet.</li>
+
+</ul>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h3 id="downloadCount">0</h3>
+
+<p>Total Downloads</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>24/7</h3>
+
+<p>API Availability</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Fast</h3>
+
+<p>Response Time</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+Made with ❤️ using HTML, CSS, JavaScript & RapidAPI
+
+</p>
+
+<p>
+
+© 2026 Spotify Downloader Pro
+
+</p>
+
+</footer>
+
+<script src="config.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
